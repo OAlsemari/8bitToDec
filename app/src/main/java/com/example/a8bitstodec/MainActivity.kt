@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
             for (n in 0..7) {
                 if (checkList[n])
-                    totalNum += one.shl(n)
+                    totalNum = totalNum or one.shl(n)
             }
 
             textView.text = "$totalNum\n${totalNum.toString(2).padStart(8, '0')}"
